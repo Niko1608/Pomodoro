@@ -21,7 +21,7 @@ export default function Header({ setTime, currentTime, setCurrentTime }) {
                     style={[styles.itemStyle, currentTime !== index && { borderColor: "transparent" }]}
                     onPress={() => handlePress(index)}
                 >
-                    <Text>{item}</Text>
+                    <Text style={{ fontWeight: "bold", textAlign: 'center' }}>{item}</Text>
                 </TouchableOpacity>
             ))}
         </View>
